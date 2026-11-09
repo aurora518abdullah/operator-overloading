@@ -38,11 +38,11 @@ public:
         temp.a = a / ob.a;
         return temp;
     }
-    void operator++(int)
+    add operator++(int) // class dieo kora jay return 
     {
-        cout<<a<<endl;
-        
-        cout<<a++<<endl;
+        add t;
+        t.a=a+1;
+        return t;
     }
      void operator--()
     {
@@ -54,7 +54,7 @@ public:
 
 int main()
 {
-    add o1,o2,o3,o4,o5,o6,o7;
+    add o1,o2,o3,o4,o5,o6,o7,o8;
 
     o1.a=10;
     o2.a=4;
@@ -65,8 +65,9 @@ int main()
 
     o7 = ((((o1+o2-o3)*o4)/o5));
     cout << o7.a<<endl<<endl;
-    o1++;
-    --o1;
-
+    o8=o1++;
+   
+    cout<<o8.a<<endl;
+     --o1;
     return 0;
 }
