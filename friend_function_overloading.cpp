@@ -10,7 +10,7 @@ public:
         a = x;
     }
 
-    friend Number operator+(Number ob1, Number ob2);
+    friend Number operator+(Number ob1, Number ob2);// friend er klaj nai.. hudai.. aita na dieo baire trheke same vabe kora jay..
 
     void display() {
         cout << a << endl;
